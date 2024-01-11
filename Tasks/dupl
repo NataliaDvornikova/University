@@ -1,0 +1,14 @@
+def contains_duplicates(arr):
+    seen = set()
+    for num in arr:
+        if num in seen:
+            return True
+        seen.add(num)
+    return False
+
+# Пример использования функции
+arr1 = [1, 2, 3, 4, 5]
+arr2 = [1, 2, 3, 4, 1]
+
+print(contains_duplicates(arr1))  # Вывод: False
+print(contains_duplicates(arr2))  # Вывод: True
